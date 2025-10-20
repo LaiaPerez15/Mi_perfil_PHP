@@ -1,0 +1,71 @@
+/* Carrusel 3D de cartas de colores + barra inferior de menú */
+.wrapper {
+    height: 500px;
+    display: flex;
+    perspective: 1000px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 300px;
+}
+
+.inner {
+    --w: 120px;
+    --h: 180px;
+    /* alto total de cada card */
+    --translateZ: 350px;
+    --rotateX: -15deg;
+    position: relative;
+    width: var(--w);
+    height: var(--h);
+    transform-style: preserve-3d;
+    animation: rotating 20s linear infinite;
+}
+
+@keyframes rotating {
+    from {
+        transform: perspective(1000px) rotateX(var(--rotateX)) rotateY(0deg);
+    }
+
+    to {
+        transform: perspective(1000px) rotateX(var(--rotateX)) rotateY(360deg);
+    }
+}
+
+.card {
+    position: absolute;
+    width: var(--w);
+    height: var(--h);
+    border-radius: 12px;
+    overflow: hidden;
+    transform: rotateY(calc((360deg / var(--quantity)) * var(--index))) translateZ(var(--translateZ));
+    cursor: pointer;
+    transition: transform 0.3s;
+    background: rgb(var(--color-card));
+    /* color de fondo de la carta */
+}
+
+.card:hover {
+    transform: rotateY(calc((360deg / var(--quantity)) * var(--index))) translateZ(calc(var(--translateZ) + 20px));
+}
+
+/* Barra inferior negra con título */
+.card span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 12px 4px;
+    font-weight: 600;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 12px 12px;
+}
+
+.card a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}

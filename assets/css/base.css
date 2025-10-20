@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(180deg, #f3f6ff 0%, #f7f7fb 100%);
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    min-height: 250px;
+    align-content: center;
+    height: 100%;
+     --s: 194px;
+    --c1: #f6b3ed;
+    --c2: #c4a3c0;
+
+    --_l: #0000 calc(25% / 3), var(--c1) 0 25%, #0000 0;
+    --_g: conic-gradient(from 120deg at 50% 87.5%, var(--c1) 120deg, #0000 0);
+
+    background: var(--_g), var(--_g) 0 calc(var(--s) / 2),
+        conic-gradient(from 180deg at 75%, var(--c2) 60deg, #0000 0),
+        conic-gradient(from 60deg at 75% 75%, var(--c1) 0 60deg, #0000 0),
+        linear-gradient(150deg, var(--_l)) 0 calc(var(--s) / 2),
+        conic-gradient(at 25% 25%,
+            #0000 50%,
+            var(--c2) 0 240deg,
+            var(--c1) 0 300deg,
+            var(--c2) 0),
+        linear-gradient(-150deg, var(--_l)) #895585;
+    background-size: calc(0.866 * var(--s)) var(--s);
+}
+
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    letter-spacing: 0.4px
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 8px
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    display: inline-block;
+    opacity: 0.95
+}
+
+.nav a:hover {
+    background: rgba(255, 255, 255, 0.08)
+}
+
+.nav a.active {
+    box-shadow: inset 0 -3px 0 rgba(255, 255, 255, 0.15)
+}
+
+main {
+    padding: 2rem 1rem
+}
+
+section {
+    max-width: 860px;
+    margin: 20px auto;
+    background: white;
+    padding: 1.25rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06)
+}
+
+.card {
+    display: flex;
+    gap: 1rem;
+    align-items: center
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08)
+}
+
+footer {
+    background: #c4a3c0;
+    color: #895585;
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.02);
+    margin-top: 24px
+}

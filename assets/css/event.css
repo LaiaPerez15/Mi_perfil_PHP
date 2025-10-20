@@ -1,0 +1,9 @@
+.evento .ticket {
+    background: linear-gradient(90deg, #fff, #f8fafc);
+    padding: 12px;
+    border-radius: 8px
+}
+
+.evento .total {
+    margin-top: 8px
+}

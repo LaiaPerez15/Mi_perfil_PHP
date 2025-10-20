@@ -1,0 +1,16 @@
+.peliculas h2 {
+    color: #1f2937
+}
+
+.movie-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px
+}
+
+.movie-table th,
+.movie-table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left
+}

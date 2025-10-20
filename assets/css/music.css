@@ -1,0 +1,99 @@
+.music-section {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Fondo degradado tipo videoclip */
+.video-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #3a0ca3, #7209b7, #f72585);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  z-index: 0;
+  filter: brightness(0.9);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Contenido */
+.music-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  padding: 20px;
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cover {
+  width: 220px;
+  height: 220px;
+  background: url('/laia-perfil/img/music-cover.jpg') center/cover no-repeat;
+  border-radius: 20px;
+  margin: 0 auto 25px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+/* Título y artista */
+.song-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.artist {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+/* Letras animadas */
+.lyrics p {
+  opacity: 0;
+  animation: fadeLyrics 8s infinite;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.lyrics p:nth-child(1) { animation-delay: 0s; }
+.lyrics p:nth-child(2) { animation-delay: 2.5s; }
+.lyrics p:nth-child(3) { animation-delay: 5s; }
+
+@keyframes fadeLyrics {
+  0%, 100% { opacity: 0; transform: translateY(10px); }
+  10%, 40% { opacity: 1; transform: translateY(0); }
+}
+
+/* Botón Spotify */
+.spotify-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background: #1db954;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.spotify-btn:hover {
+  background: #1ed760;
+}
