@@ -2,28 +2,55 @@
 $pageTitle = "Películas - Laia";
 $pageStyle = "movies.css";
 include('../includes/header.php');
-$horas = 8;
-$peliculas = 4;
-$lista = [
-    ['titulo'=>'Inception','dur'=>148],
-    ['titulo'=>'The Matrix','dur'=>136],
-    ['titulo'=>'Interstellar','dur'=>169],
-    ['titulo'=>'Amélie','dur'=>122],
-];
 ?>
-<section class="peliculas">
-    <h2>🎬 Maratón de Películas</h2>
-    <p>He planificado un maratón de <?= $peliculas; ?> películas durante <?= $horas; ?> horas.</p>
-    <table class="movie-table">
-        <thead><tr><th>Título</th><th>Duración (min)</th></tr></thead>
-        <tbody>
-            <?php foreach($lista as $item): ?>
-                <tr>
-                    <td><?= $item['titulo']; ?></td>
-                    <td><?= $item['dur']; ?></td>
-                </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
+
+<section class="movies-hero">
+  <div class="video-bg">
+    <video autoplay muted loop playsinline>
+      <source src="/laia-perfil/assets/video/f1-trailer.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="hero-content">
+    <h1>🎬 Maratón de Cine – Estilo Laia</h1>
+    <div class="trailer-lyrics">
+      <p>No hay nada que me detenga...</p>
+      <p>Las calles de Barcelona cobran vida...</p>
+      <p>Y la magia de los cuentos nunca muere.</p>
+    </div>
+
+    <div class="hero-buttons">
+      <a href="/laia-perfil/assets/video/f1-trailer.mp4" class="btn-play" target="_blank">▶ Reproducir</a>
+      <a href="#galeria" class="btn-info">ℹ Más información</a>
+    </div>
+  </div>
 </section>
+
+<section id="galeria" class="movie-gallery-carousel">
+  <div class="carousel-track">
+    <div class="movie-card f1">
+      <div class="overlay">
+        <h3>F1 – El Velocista</h3>
+        <p>Tráiler oficial del film de carreras más esperado del año.</p>
+      </div>
+    </div>
+
+    <div class="movie-card merli">
+      <div class="overlay">
+        <h3>Merlí</h3>
+        <p>Serie grabada en Barcelona que te hará pensar y sentir.</p>
+      </div>
+    </div>
+
+    <div class="movie-card rapunzel">
+      <div class="overlay">
+        <h3>Enredados</h3>
+        <p>Un clásico moderno lleno de humor, color y libertad.</p>
+      </div>
+    </div>
+
+    <!-- Puedes duplicar más tarjetas si quieres -->
+  </div>
+</section>
+
 <?php include('../includes/footer.php'); ?>
