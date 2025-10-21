@@ -138,6 +138,7 @@ body {
     border-radius: 20px;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     overflow: hidden;
     flex-shrink: 0;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
@@ -177,15 +178,15 @@ body {
 
 /* ===== IMÁGENES DE LAS PELÍCULAS ===== */
 .movie-card.f1 {
-    background-image: url('/laia-perfil/img/f1.jpg');
+    background-image: url('/laia-perfil/assets/img/f1.png');
 }
 
 .movie-card.merli {
-    background-image: url('/laia-perfil/img/merli.jpg');
+    background-image: url('/laia-perfil/assets/img/merli.png');
 }
 
 .movie-card.rapunzel {
-    background-image: url('/laia-perfil/img/rapunzel.jpg');
+    background-image: url('/laia-perfil/assets/img/rapunzel.png');
 }
 
 /* ===== ANIMACIONES ===== */
@@ -215,4 +216,8 @@ body {
         height: 300px;
         min-width: 200px;
     }
+}
+
+.movie-card {
+  border: 1px solid #fff; /* Solo para depurar */
 }

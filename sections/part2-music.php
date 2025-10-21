@@ -5,20 +5,13 @@ include('../includes/header.php');
 
 $cancion = "There's Nothing Holdin' Me Back";
 $artista = "Shawn Mendes";
-$spotifyLink = "https://open.spotify.com/track/7JJmb5XwzOO8jgpou264Ml"; 
+$spotifyLink = "https://open.spotify.com/track/7JJmb5XwzOO8jgpou264Ml"; // Enlace oficial a Spotify
 ?>
 
 <section class="music-section">
   <div class="video-bg"></div>
-
   <div class="music-content">
-    <!-- Contenedor de la portada con animaciones -->
-    <div class="cover-container">
-      <div class="heartbeat"></div>
-      <div class="wave"></div>
-      <div class="cover"></div>
-    </div>
-
+    <div class="cover"></div>
     <h2 class="song-title"><?= $cancion; ?></h2>
     <p class="artist"><?= $artista; ?></p>
 

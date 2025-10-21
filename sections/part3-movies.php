@@ -13,12 +13,7 @@ include('../includes/header.php');
 
   <div class="hero-content">
     <h1>🎬 Maratón de Cine – Estilo Laia</h1>
-    <div class="trailer-lyrics">
-      <p>No hay nada que me detenga...</p>
-      <p>Las calles de Barcelona cobran vida...</p>
-      <p>Y la magia de los cuentos nunca muere.</p>
-    </div>
-
+    
     <div class="hero-buttons">
       <a href="/laia-perfil/assets/video/f1-trailer.mp4" class="btn-play" target="_blank">▶ Reproducir</a>
       <a href="#galeria" class="btn-info">ℹ Más información</a>
@@ -49,7 +44,6 @@ include('../includes/header.php');
       </div>
     </div>
 
-    <!-- Puedes duplicar más tarjetas si quieres -->
   </div>
 </section>
 

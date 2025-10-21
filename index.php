@@ -3,7 +3,6 @@ $pageTitle = "Laia - Perfil";
 
 // Array de cartas de colores con barra inferior
 $menus = [
-    ['title' => 'Inicio', 'link' => '/laia-perfil/index.php', 'color' => '142, 249, 252'],
     ['title' => 'Perfil', 'link' => '/laia-perfil/sections/part1-profile.php', 'color' => '142, 252, 204'],
     ['title' => 'Música', 'link' => '/laia-perfil/sections/part2-music.php', 'color' => '142, 252, 157'],
     ['title' => 'Películas', 'link' => '/laia-perfil/sections/part3-movies.php', 'color' => '215, 252, 142'],
