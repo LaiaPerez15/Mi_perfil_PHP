@@ -90,7 +90,7 @@ main {
 section {
     max-width: 860px;
     margin: 20px auto;
-    background: white;
+    background: #c4a3c079;
     padding: 1.25rem;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06)
