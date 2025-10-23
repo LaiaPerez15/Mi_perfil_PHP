@@ -23,23 +23,27 @@ include('../includes/header.php');
 
 <section id="galeria" class="movie-gallery-carousel">
   <div class="carousel-track">
-    <div class="movie-card f1">
+
+    <!-- Tarjeta F1 -->
+    <div class="movie-card" 
+      style="background-image: url('../img/f1.png');">
       <div class="overlay">
-        <h3>F1 – El Velocista</h3>
         <p>Tráiler oficial del film de carreras más esperado del año.</p>
       </div>
     </div>
 
-    <div class="movie-card merli">
+    <!-- Tarjeta Merlí -->
+    <div class="movie-card" 
+      style="background-image: url('../img/merli.png');">
       <div class="overlay">
-        <h3>Merlí</h3>
         <p>Serie grabada en Barcelona que te hará pensar y sentir.</p>
       </div>
     </div>
 
-    <div class="movie-card rapunzel">
+    <!-- Tarjeta Rapunzel -->
+    <div class="movie-card" 
+      style="background-image: url('../img/rapunzel.png');">
       <div class="overlay">
-        <h3>Enredados</h3>
         <p>Un clásico moderno lleno de humor, color y libertad.</p>
       </div>
     </div>
